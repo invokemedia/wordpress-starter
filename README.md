@@ -20,7 +20,7 @@ But you will need to setup and configure the following files:
 
 #### Apache Note
 
-Be sure to [update the apache .htaccess file](/blob/master/.htaccess#L9-L10) with your domain to the requests to WordPress are rewritten correctly.
+Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domain to the requests to WordPress are rewritten correctly.
 
 ### Testing
 
