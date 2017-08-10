@@ -1,0 +1,41 @@
+<phpunit
+	bootstrap="tests/phpunit/includes/bootstrap.php"
+        backupGlobals="false"
+        colors="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false"
+        syntaxCheck="false"
+        >
+    <testsuites>
+        <!-- Default test suite to run all tests -->
+        <testsuite>
+            <directory suffix=".php">tests/phpunit/tests</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="junit" target="tests/phpunit/build/logs/junit.xml" logIncompleteSkipped="false"/>
+    </logging>
+    <php>
+        <const name="WP_RUN_CORE_TESTS" value="0" />
+    </php>
+	<listeners>
+		<listener class="SpeedTrapListener" file="tests/phpunit/includes/speed-trap-listener.php">
+			<arguments>
+				<array>
+					<element key="slowThreshold">
+						<integer>150</integer>
+					</element>
+				</array>
+			</arguments>
+		</listener>
+	</listeners>
+	<filter>
+		<whitelist processUncoveredFilesFromWhitelist="true">
+			<directory suffix=".php">src</directory>
+		</whitelist>
+	</filter>
+</phpunit>
