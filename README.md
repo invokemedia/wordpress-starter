@@ -3,6 +3,14 @@ WordPress Starter
 
 > A submodule installation of WordPress including the WordPress testing suite
 
+### Cloning
+
+Since this project has a submodule (WordPress) you need to clone recursively:
+
+```
+git clone git@github.com:invokemedia/wordpress-starter.git --recursive
+```
+
 ### Setup
 
 This project assumes you are using [Laravel Valet](https://laravel.com/docs/5.4/valet) with the [WordpressSubDirectoryValetDriver](https://github.com/invokemedia/valet-WordPress-subdirectory).
