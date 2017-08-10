@@ -1,0 +1,27 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Forcing HTTPS
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{SERVER_NAME} ((invokedigital|invokemedia|invokestage).com$|invokedigital.co$)
+    RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+
+    RewriteRule ^index\.php$ - [L]
+
+    RewriteCond %{REQUEST_URI} ^/wp-login.php [OR]
+    RewriteCond %{REQUEST_URI} ^/wp-includes [OR]
+    RewriteCond %{REQUEST_URI} ^/wp-admin [OR]
+    RewriteCond %{REQUEST_URI} ^/wp-cron.php
+    RewriteRule ^(.*)$ /wordpress/$1 [L]
+
+    RewriteCond %{REQUEST_URI} !^/wordpress/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /wordpress/index.php
+    RewriteRule ^(/)?$ wordpress/index.php [L]
+</IfModule>
+
+Header set Access-Control-Allow-Origin "*"
