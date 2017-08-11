@@ -3,7 +3,7 @@ WordPress Starter
 
 > A submodule installation of WordPress including the WordPress testing suite
 
-### Cloning
+## Cloning
 
 Since this project has a submodule (WordPress) you need to clone recursively:
 
@@ -11,11 +11,11 @@ Since this project has a submodule (WordPress) you need to clone recursively:
 git clone git@github.com:invokemedia/wordpress-starter.git --recursive
 ```
 
-### Setup
+## Setup
 
 This project assumes you are using [Laravel Valet](https://laravel.com/docs/5.4/valet) with the [WordpressSubDirectoryValetDriver](https://github.com/invokemedia/valet-WordPress-subdirectory).
 
-### Install
+## Install
 
 There is no difference from this project and a regular WordPress site.
 
@@ -34,7 +34,7 @@ Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domai
 
 You will need to add the `nginx-wp.conf` block of code to your sites virtual host file. You will need to [update the nginx-wp.conf file](/nginx-wp.conf#L2) with your domain before using it properly.
 
-### Commands
+## Commands
 
 The composer setup includes some commands that can be run manually or also run after an update:
 
@@ -48,6 +48,6 @@ The composer setup includes some commands that can be run manually or also run a
 
 The [wp-cli](https://github.com/wp-cli/wp-cli) command is installed via composer. You can access the command as `./vendor/bin/wp`.
 
-### Testing
+## Testing
 
 Just run `phpunit` from the root of the project.
