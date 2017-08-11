@@ -40,6 +40,10 @@ The composer setup includes some commands that can be run manually or also run a
 4. `composer run mess`: runs phpmd on the theme code
 5. `composer run all`: runs test, sniff, and lint together
 
+#### WP-CLI command
+
+The [wp-cli](https://github.com/wp-cli/wp-cli) command is installed via composer. You can access the command as `./vendor/bin/wp`.
+
 ### Testing
 
 Just run `phpunit` from the root of the project.
