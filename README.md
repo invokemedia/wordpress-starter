@@ -1,7 +1,7 @@
 WordPress Starter
 =================
 
-> A submodule installation of WordPress including the WordPress testing suite
+> A submodule installation of WordPress including the WordPress testing suite, linting, formatting, and wp-cli
 
 ## Cloning
 
