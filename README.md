@@ -30,6 +30,10 @@ But you will need to setup and configure the following files:
 
 Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domain to the requests to WordPress are rewritten correctly.
 
+#### Nginx Note
+
+You will need to add the `nginx-wp.conf` block of code to your sites virtual host file. You will need to [update the nginx-wp.conf file](/nginx-wp.conf#L2) with your domain before using it properly.
+
 ### Commands
 
 The composer setup includes some commands that can be run manually or also run after an update:
