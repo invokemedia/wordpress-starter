@@ -30,6 +30,16 @@ But you will need to setup and configure the following files:
 
 Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domain to the requests to WordPress are rewritten correctly.
 
+### Commands
+
+The composer setup includes some commands that can be run manually or also run after an update:
+
+1. `composer run test`: runs the phpunit tests
+2. `composer run sniff`: runs phpcs command on the theme
+3. `composer run lint`: runs php linting on the theme code
+4. `composer run mess`: runs phpmd on the theme code
+5. `composer run all`: runs test, sniff, and lint together
+
 ### Testing
 
 Just run `phpunit` from the root of the project.
