@@ -55,6 +55,18 @@ define('SECURE_AUTH_SALT', 'put your unique phrase here');
 define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
 
+/* Custom WordPress URL. */
+define('WP_SITEURL', 'http://wordpress-starter.dev');
+define('WP_HOME', 'http://wordpress-starter.dev');
+define('WP_CONTENT_URL', 'http://wordpress-starter.dev/wp-content');
+define('WP_PLUGIN_URL', 'http://wordpress-starter.dev/wp-content/plugins');
+define('WPMU_PLUGIN_URL', 'http://wordpress-starter.dev/wp-content/mu-plugins');
+
+/* Custom WordPress content path */
+define('WP_CONTENT_DIR', realpath(ABSPATH . '../wp-content'));
+define('WP_PLUGIN_DIR', realpath(ABSPATH . '../wp-content/plugins'));
+define('WPMU_PLUGIN_DIR', realpath(ABSPATH . '../wp-content/mu-plugins'));
+
 /**#@-*/
 
 /**

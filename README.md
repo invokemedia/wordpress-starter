@@ -17,12 +17,11 @@ This project assumes you are using [Laravel Valet](https://laravel.com/docs/5.4/
 
 ## Install
 
-There is no difference from this project and a regular WordPress site.
-
-But you will need to setup and configure the following files:
+You will need to setup and configure the following files:
 
 1. `wp-config-sample.php` to `wp-config.php`
 2. `wp-tests-config-sample.php` to `wp-tests-config.php`
+3. Fill out the empty strings that need values
 
 **Note**: Be sure to put different details in `wp-tests-config.php` as it will write to that database as part of the testing. You _can_ use the same database for testing, but it adds new tables with a prefix of `wptests_` to the database.
 
