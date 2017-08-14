@@ -4,9 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "795d0a94a126de5b2ea82d9dd26d9690",
-    "content-hash": "4500955f7eb2737dd5cf5c5736d02274",
-    "packages": [],
+    "hash": "2680e563f9b4f8cce0e3d6e3afc8bfb4",
+    "content-hash": "cc972d67d972272598e567884e28f773",
+    "packages": [
+        {
+            "name": "invokemedia/laravel-helpers",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/invokemedia/laravel-helpers.git",
+                "reference": "1ab095b8be234ad87a257faa99816cc916409d31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/invokemedia/laravel-helpers/zipball/1ab095b8be234ad87a257faa99816cc916409d31",
+                "reference": "1ab095b8be234ad87a257faa99816cc916409d31",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Rappa",
+                    "email": "rappa819@gmail.com"
+                },
+                {
+                    "name": "Invoke",
+                    "email": "dev@invokedigital.co"
+                }
+            ],
+            "description": "Laravel Helpers for Non-Laravel Projects",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/invokemedia/laravel-helpers/tree/1.0.0"
+            },
+            "time": "2017-08-14 23:11:39"
+        }
+    ],
     "packages-dev": [
         {
             "name": "composer/ca-bundle",

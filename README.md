@@ -22,6 +22,7 @@ You will need to setup and configure the following files:
 1. `wp-config-sample.php` to `wp-config.php`
 2. `wp-tests-config-sample.php` to `wp-tests-config.php`
 3. Fill out the empty strings that need values
+4. Run `composer install`
 
 **Note**: Be sure to put different details in `wp-tests-config.php` as it will write to that database as part of the testing. You _can_ use the same database for testing, but it adds new tables with a prefix of `wptests_` to the database.
 
@@ -32,6 +33,8 @@ Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domai
 #### Nginx Note
 
 You will need to add the `nginx-wp.conf` block of code to your sites virtual host file. You will need to [update the nginx-wp.conf file](/nginx-wp.conf#L2) with your domain before using it properly.
+
+This installation also includes a copy of [invokemedia/laravel-helpers](https://github.com/invokemedia/laravel-helpers) which we use to complete some of the missing `array_*` methods in PHP. These functions help us write more concise code and reduce repeating blocks of code. This is expecially important when working with arrays of Post objects.
 
 ## Commands
 
