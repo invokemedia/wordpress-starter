@@ -24,7 +24,7 @@
         "url": "https://github.com/invokemedia/laravel-helpers"
     }],
     "require": {
-        "invokemedia/laravel-helpers": "~1.0",
+        "invokemedia/laravel-helpers": ">1.0",
         "php": ">=7.0"
     },
     "require-dev": {

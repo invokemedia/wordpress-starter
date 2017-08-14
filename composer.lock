@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2680e563f9b4f8cce0e3d6e3afc8bfb4",
-    "content-hash": "cc972d67d972272598e567884e28f773",
+    "hash": "faefc8f2d3f2e0df7604c4f5a85fe8d1",
+    "content-hash": "3e3cbc2ccb572440913b18c25284726a",
     "packages": [
         {
             "name": "invokemedia/laravel-helpers",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/invokemedia/laravel-helpers.git",
-                "reference": "1ab095b8be234ad87a257faa99816cc916409d31"
+                "reference": "ddbdfd6cb5d0ba4295278841fac95f92dee57533"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/invokemedia/laravel-helpers/zipball/1ab095b8be234ad87a257faa99816cc916409d31",
-                "reference": "1ab095b8be234ad87a257faa99816cc916409d31",
+                "url": "https://api.github.com/repos/invokemedia/laravel-helpers/zipball/ddbdfd6cb5d0ba4295278841fac95f92dee57533",
+                "reference": "ddbdfd6cb5d0ba4295278841fac95f92dee57533",
                 "shasum": ""
             },
             "require": {
@@ -49,9 +49,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/invokemedia/laravel-helpers/tree/1.0.0"
+                "source": "https://github.com/invokemedia/laravel-helpers/tree/1.1.0"
             },
-            "time": "2017-08-14 23:11:39"
+            "time": "2017-08-14 23:28:53"
         }
     ],
     "packages-dev": [
