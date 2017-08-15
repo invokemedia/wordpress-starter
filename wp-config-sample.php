@@ -55,12 +55,17 @@ define('SECURE_AUTH_SALT', 'put your unique phrase here');
 define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
 
+// try to guess what the domain name is and if it is HTTPS or not
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$domain_name = $_SERVER['HTTP_HOST'].'/';
+$site_url = $protocol.$domain_name;
+
 /* Custom WordPress URL. */
-define('WP_SITEURL', 'http://wordpress-starter.dev');
-define('WP_HOME', 'http://wordpress-starter.dev');
-define('WP_CONTENT_URL', 'http://wordpress-starter.dev/wp-content');
-define('WP_PLUGIN_URL', 'http://wordpress-starter.dev/wp-content/plugins');
-define('WPMU_PLUGIN_URL', 'http://wordpress-starter.dev/wp-content/mu-plugins');
+define('WP_SITEURL', $site_url);
+define('WP_HOME', $site_url);
+define('WP_CONTENT_URL', $site_url . '/wp-content');
+define('WP_PLUGIN_URL', $site_url . '/wp-content/plugins');
+define('WPMU_PLUGIN_URL', $site_url . '/wp-content/mu-plugins');
 
 /* Custom WordPress content path */
 define('WP_CONTENT_DIR', realpath(ABSPATH . '../wp-content'));
