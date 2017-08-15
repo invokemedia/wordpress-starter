@@ -34,7 +34,11 @@ Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domai
 
 You will need to add the `nginx-wp.conf` block of code to your sites virtual host file. You will need to [update the nginx-wp.conf file](/nginx-wp.conf#L2) with your domain before using it properly.
 
-This installation also includes a copy of [invokemedia/laravel-helpers](https://github.com/invokemedia/laravel-helpers) which we use to complete some of the missing `array_*` methods in PHP. These functions help us write more concise code and reduce repeating blocks of code. This is expecially important when working with arrays of Post objects.
+## Included Packages
+
+We include some dev packages by default for testing, formatting, and linting code. We also include [wp-cli](https://github.com/wp-cli/wp-cli) which is installed via composer as well.
+
+One of the additional packages is [invokemedia/laravel-helpers](https://github.com/invokemedia/laravel-helpers) which we use to complete some of the missing `array_*` methods in PHP. These functions help us write more concise code and reduce repeating blocks of code. This is expecially important when working with arrays of `Post` objects.
 
 ## Commands
 
