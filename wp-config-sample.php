@@ -57,7 +57,7 @@ define('NONCE_SALT',       'put your unique phrase here');
 
 // try to guess what the domain name is and if it is HTTPS or not
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$domain_name = $_SERVER['HTTP_HOST'].'/';
+$domain_name = $_SERVER['HTTP_HOST'];
 $site_url = $protocol.$domain_name;
 
 /* Custom WordPress URL. */
