@@ -40,6 +40,10 @@ We include some dev packages by default for testing, formatting, and linting cod
 
 One of the additional packages is [invokemedia/laravel-helpers](https://github.com/invokemedia/laravel-helpers) which we use to complete some of the missing `array_*` methods in PHP. These functions help us write more concise code and reduce repeating blocks of code. This is expecially important when working with arrays of `Post` objects.
 
+## Plugins
+
+There are no plugins included but we recommend installing the [invokemedia/invoke-helpers](https://github.com/invokemedia/invoke-helpers) as a *must-use plugin*. It wraps up some of the base WordPress functions in nicer abstractions.
+
 ## Commands
 
 The composer setup includes some commands that can be run manually or also run after an update:
