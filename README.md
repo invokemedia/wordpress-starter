@@ -13,7 +13,11 @@ git clone git@github.com:invokemedia/wordpress-starter.git --recursive
 
 ## Setup
 
-This project assumes you are using [Laravel Valet](https://laravel.com/docs/5.4/valet) with the [WordpressSubDirectoryValetDriver](https://github.com/invokemedia/valet-WordPress-subdirectory).
+This project works with [Laravel Valet](https://laravel.com/docs/5.4/valet) if you have the [WordpressSubDirectoryValetDriver](https://github.com/invokemedia/valet-WordPress-subdirectory) installed.
+
+You can also use the included `.htaccess` file as long as you [update it with the correct information](/.htaccess#L9-L10) for local development.
+
+If you are using nginx, you can try the included conf file, which also [needs to be updated](/nginx-wp.conf#L2) for the proper domain.
 
 ## Install
 
