@@ -13,7 +13,7 @@ git clone git@github.com:invokemedia/wordpress-starter.git --recursive
 
 ## Running in Docker
 
-You can use the provided [Dockerfile](/Dockerfile) or use `docker-compose` to run the application.
+You can use the provided [Dockerfile](/Dockerfile) or use `docker-compose` to run the application. The image being used is called [webdevops/php-nginx](https://hub.docker.com/r/webdevops/php-nginx).
 
 To use the Dockerfile to build, you need to run the following commands:
 
