@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  nginx-php:
+    image: webdevops/php-nginx:alpine-php7
+    environment:
+      - DOCKER=1
+    command: sh /app/scripts/startup.sh
+    network_mode: "host"
+    ports:
+      - "80:80"
+      - "3306:3306"
+    volumes:
+      - ./:/app
+      - ./conf/nginx/nginx-site.conf:/opt/docker/etc/nginx/vhost.common.d/nginx-site.conf

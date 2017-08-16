@@ -11,13 +11,28 @@ Since this project has a submodule (WordPress) you need to clone recursively:
 git clone git@github.com:invokemedia/wordpress-starter.git --recursive
 ```
 
+## Running in Docker
+
+You can use the provided [Dockerfile](/Dockerfile) or use `docker-compose` to run the application.
+
+To use the Dockerfile to build, you need to run the following commands:
+
+```
+docker build -t my-tag-name .
+docker run --net=host -p 80:80 -p 3306:3306 my-tag-name:latest
+```
+
+The `--net=host` flag is required, as it allows us to use the host MySQL database.
+
+#### Important Note
+
+If you are using docker in any fashion, you will need to set the `wp-config.php` `DB_HOST` to `dockerhost`.
+
 ## Setup
 
 This project works with [Laravel Valet](https://laravel.com/docs/5.4/valet) if you have the [WordpressSubDirectoryValetDriver](https://github.com/invokemedia/valet-WordPress-subdirectory) installed.
 
 You can also use the included `.htaccess` file as long as you [update it with the correct information](/.htaccess#L9-L10) for local development.
-
-If you are using nginx, you can try the included conf file, which also [needs to be updated](/nginx-wp.conf#L2) for the proper domain.
 
 ## Install
 
@@ -30,13 +45,17 @@ You will need to setup and configure the following files:
 
 **Note**: Be sure to put different details in `wp-tests-config.php` as it will write to that database as part of the testing. You _can_ use the same database for testing, but it adds new tables with a prefix of `wptests_` to the database.
 
+#### Important Note For Docker
+
+If you are using docker in any fashion, you will need to set the `wp-config.php` `DB_HOST` to `dockerhost`.
+
 #### Apache Note
 
 Be sure to [update the apache .htaccess file](/.htaccess#L9-L10) with your domain to the requests to WordPress are rewritten correctly.
 
 #### Nginx Note
 
-You will need to add the `nginx-wp.conf` block of code to your sites virtual host file. You will need to [update the nginx-wp.conf file](/nginx-wp.conf#L2) with your domain before using it properly.
+You will need to add the `conf/nginx/nginx-site.conf` block of code to your sites virtual host file.
 
 ## Included Packages
 
